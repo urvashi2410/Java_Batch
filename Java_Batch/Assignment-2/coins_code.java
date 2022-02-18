@@ -46,6 +46,9 @@ class Coins{
     }
 
     public int findChange(){
-        
+        int change;
+        int round = Math.round(findCentsValue());
+        change = findCentsValue() - round;
+        return change;
     }
 }
